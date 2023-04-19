@@ -23,7 +23,7 @@ public class bisection_method {
 		int n = 0;
 		while(!(b - a < e)) {
 			x = (a + b) / 2; // gan x la diem nam giua khoang (a,b)
-			System.out.printf("%d %f %f%n", n, a, b);
+			System.out.printf("%d \t %.10f \t %.10f%n", n, a, b);
 			if(f(a)*f(x) > 0) { // cap nhat khoang moi
 				a = x;
 			} else {
